@@ -1,0 +1,11 @@
+create database lab_coe;
+
+use lab_coe;
+
+create table kondisi ( kondisi_barang varchar(20), jumlah int(100), id_kondisi int(11) );
+
+create table master_barang ( kode_barang int(10), nama_barang varchar(100), satuan varchar(100), keterangan varchar(100), id_kondisi int(11), id_pengadaan int(10) );
+
+create table pengadaan_barang ( id_pengadaan int(10), jumlah_total varchar(100), keterangan varchar(100) );
+
+create table users ( id int(10), username varchar(100), password varchar(8) );
